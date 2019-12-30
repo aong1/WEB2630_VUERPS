@@ -13,16 +13,16 @@ Start New Game
 * Hide Start Game Button Show Game Functionality Buttons
 Game Functionality
 * Rock | Paper | Scissors
-* * Compare User Choice with Computer
-* * Update Wins
-* * Show Outcome in Log
-* * * ex: Computer Chose Scissors | Rock Beats Scissors | Player Wins!
-* * First to 10 Wins
-* * * Display User Win | Loss Status
-* * * End Game
-* * Restart
-* * * Reset Everything 
-* * * Let User Start New Game
+  * Compare User Choice with Computer
+  * Update Wins
+  * Show Outcome in Log
+    * ex: Computer Chose Scissors | Rock Beats Scissors | Player Wins!
+  * First to 10 Wins
+    * Display User Win | Loss Status
+    * End Game
+  * Restart
+    * Reset Everything 
+    * Let User Start New Game
 
 ## Part 1 Submission
 
