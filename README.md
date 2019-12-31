@@ -26,16 +26,16 @@ Game Functionality
 
 ## Part 1 Submission
 
-1. Fork it (<https://github.com/CodySquadroni/VueRPS/fork>)
-2. Clone it (<https://github.com/GITHUB_USERNAME/VueRPS.git>)
+1. Fork it (<https://github.com/CodySquadroni/WEB2630_VueRPS/fork>)
+2. Clone it (<https://github.com/GITHUB_USERNAME/WEB2630_VueRPS.git>)
 3. Start The Project Requirements From Above
 4. Submit Your GitHub URL
   * For Part 1, you just need to have something submitted to show your progress. You will have more time to finish the project for Part 2.
 
 ## Part 2 Submission
 
-1. Fork it (<https://github.com/CodySquadroni/VueRPS/fork>)
-2. Clone it (<https://github.com/GITHUB_USERNAME/VueRPS.git>)
+1. Fork it (<https://github.com/CodySquadroni/WEB2630_VueRPS/fork>)
+2. Clone it (<https://github.com/GITHUB_USERNAME/WEB2630_VueRPS.git>)
 3. Complete The Project Requirements From Above
 4. Live Host VueRPS on Netlify
 5. Submit Your GitHub and Netlify URL
