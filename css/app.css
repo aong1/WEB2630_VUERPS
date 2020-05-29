@@ -36,17 +36,17 @@
     margin: 5px;
 }
 
-.log ul .player-turn {
+.log ul .playerturn {
     color: green;
     background-color: #aaffb0;
 }
 
-.log ul .computer-turn {
+.log ul .computerturn {
     color: red;
     background-color: #ffc0c1;
 }
 
-.log ul .tie-turn {
+.log ul .tieturn {
   color: blue;
   background-color: #e4e8ff;
 }
