@@ -42,7 +42,7 @@
   <section class="row log" v-if = "!invis">
     <div class="small-12 columns">
       <ul>
-        <li v-for = "item in result" :class="{playerturn:player, computerturn:comp, tieturn: tie}">
+        <li v-for = "item in result" :class="{playerturn:item.player, computerturn:item.comp, tieturn:item.tie}">
           {{item.message}}
           {{checkWinner}}
         </li>
