@@ -12,7 +12,9 @@
     <div class="small-6 columns">
       <h1 class="text-center">PLAYER</h1>
       <div class="wins">
-        <div class="wins text-center" style="background-color: green; margin: 0; color: white;">
+        <div class="wins text-center" style="background-color: green; margin: 0; color: white;"
+        :style = "{width: userBar + 'px'}">
+          {{updateUserWins}}
           {{userWins}}
         </div>
       </div>
@@ -20,7 +22,9 @@
     <div class="small-6 columns">
       <h1 class="text-center">COMPUTER</h1>
       <div class="wins">
-        <div class="wins text-center" style="background-color: green; margin: 0; color: white;">
+        <div class="wins text-center" style="background-color: green;  margin: 0; color: white;"
+        :style = "{width: compBar + 'px'}">
+         {{updateCompWins}}
          {{compWins}}
         </div>
       </div>
@@ -36,7 +40,7 @@
         <button id="rock" @click = "pick(1)">ROCK</button>
         <button id="paper" @click = "pick(2)">PAPER</button>
         <button id="scissors" @click = "pick(3)">SCISSORS</button>
-        <button id="restart">RESTART</button>
+        <button id="restart" @click = "restart()">RESTART</button>
     </div>
   </section>
   <section class="row log" v-if = "!invis">
