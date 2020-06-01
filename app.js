@@ -94,13 +94,19 @@ new Vue({
 
     endGame() {
       if (this.userWins == 10) {
-        if(confirm('User wins! You won! Play Again?'))
+        setTimeout(function () {
+          if(confirm('User wins! You won! Play Again?'))
           this.restart()
-        }
+        }, 1000);
+        
+      }
         
       else if (this.compWins == 10) {
-        if(confirm('Computer wins! You lost! Play Again?'))
+        setTimeout(function () {
+          if(confirm('Computer wins! You lost! Play Again?'))
           this.restart()
+        }, 1000);
+        
       } 
     }
     
