@@ -37,20 +37,21 @@ new Vue({
         {comp: false},
         {tie: false}
       ]
-    }
+    },
+
   },
 
   computed: {
 
     updateUserWins() {
       if(this.userWins > 0) {
-        this.userBar = 20 * this.userWins; 
+        this.userBar = 10 * this.userWins; 
       }
     },
 
     updateCompWins() {
       if(this.compWins > 0) {
-        this.compBar = 20 * this.compWins; 
+        this.compBar = 10 * this.compWins; 
       }
     },
 
@@ -90,7 +91,30 @@ new Vue({
       }
        
     },//end CheckWinner method 
-    
+
+    endGame() {
+      if (this.userWins == 10) {
+        confirm({
+          title: "User wins!",
+          message: "You won! Play again?",
+          okButtonText: "Ok",
+          cancelButtonText: "Cancel"
+        }).then(result => {
+          this.restart
+        });
+        
+      } 
+      else if (this.compWins == 10) {
+        confirm({
+          title: "Computer wins!",
+          message: "You Lost! Play again?",
+          okButtonText: "Ok",
+          cancelButtonText: "Cancel"
+        }).then(result => {
+          this.restart
+        });
+      } 
+    }
     
   }
 });
