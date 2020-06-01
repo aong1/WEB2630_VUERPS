@@ -23,14 +23,14 @@ new Vue({
     },
 
     restart: function () {
-      this.userWins = 0,
-      this.compChoice = -1,
-      this.userChoice = -1,
-      this.userWins = 0,
-      this.compWins = 0,
-      this.userBar = 0,
-      this.compBar = 0,
-      this.invis = true,
+      this.userWins = 0
+      this.compChoice = -1
+      this.userChoice = -1
+      this.userWins = 0
+      this.compWins = 0
+      this.userBar = 0
+      this.compBar = 0
+      this.invis = true
       this.result = [
         {message: ''},
         {player: false},
@@ -93,26 +93,14 @@ new Vue({
     },//end CheckWinner method 
 
     endGame() {
-      if (this.userWins == 10) {
-        confirm({
-          title: "User wins!",
-          message: "You won! Play again?",
-          okButtonText: "Ok",
-          cancelButtonText: "Cancel"
-        }).then(result => {
-          this.restart
-        });
+      if (this.userBar == 100) {
+        if(confirm('User wins! You won! Play Again?'))
+          this.restart()
+        }
         
-      } 
-      else if (this.compWins == 10) {
-        confirm({
-          title: "Computer wins!",
-          message: "You Lost! Play again?",
-          okButtonText: "Ok",
-          cancelButtonText: "Cancel"
-        }).then(result => {
-          this.restart
-        });
+      else if (this.compBar == 100) {
+        if(confirm('Computer wins! You lost! Play Again?'))
+          this.restart()
       } 
     }
     
