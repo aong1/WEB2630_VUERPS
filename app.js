@@ -93,12 +93,12 @@ new Vue({
     },//end CheckWinner method 
 
     endGame() {
-      if (this.userBar == 100) {
+      if (this.userWins == 10) {
         if(confirm('User wins! You won! Play Again?'))
           this.restart()
         }
         
-      else if (this.compBar == 100) {
+      else if (this.compWins == 10) {
         if(confirm('Computer wins! You lost! Play Again?'))
           this.restart()
       } 
